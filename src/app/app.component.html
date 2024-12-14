@@ -1,3 +1,5 @@
+
+<img [src]= "logo" />
 <h1 align="center">Hello SIP ACADEMY</h1>
 
 {{title}}
@@ -6,3 +8,9 @@ organisme :{{organisme | uppercase}}
 
 <app-users></app-users>
 <button class = "btn btn-success" (click) ="display()">cliquer ici</button>
+<br/>
+<br/>
+<button class = "btn btn-success" (click) ="toggle()">show/hide</button>
+<div *ngIf="show">
+    formation sur trois framework
+</div>
